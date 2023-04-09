@@ -23,6 +23,8 @@
 		4793795929E063D5006D6A56 /* detailedCultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793795829E063D5006D6A56 /* detailedCultureView.swift */; };
 		4793795C29E08467006D6A56 /* FavorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793795B29E08467006D6A56 /* FavorsView.swift */; };
 		4793795E29E145D8006D6A56 /* MyCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793795D29E145D8006D6A56 /* MyCategoriesView.swift */; };
+		4793796229E1AEB4006D6A56 /* PicksCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793796129E1AEB4006D6A56 /* PicksCardView.swift */; };
+		4793796529E2C329006D6A56 /* GPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793796429E2C329006D6A56 /* GPTView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		4793795829E063D5006D6A56 /* detailedCultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailedCultureView.swift; sourceTree = "<group>"; };
 		4793795B29E08467006D6A56 /* FavorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorsView.swift; sourceTree = "<group>"; };
 		4793795D29E145D8006D6A56 /* MyCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCategoriesView.swift; sourceTree = "<group>"; };
+		4793796129E1AEB4006D6A56 /* PicksCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicksCardView.swift; sourceTree = "<group>"; };
+		4793796429E2C329006D6A56 /* GPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		4793793D29E01BCF006D6A56 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4793796329E2C314006D6A56 /* GPT */,
 				4793795A29E08454006D6A56 /* FavorsView */,
 				4793795329E060B8006D6A56 /* AllCardsViews */,
 				4793794729E01E40006D6A56 /* HomeViews */,
@@ -147,6 +152,7 @@
 				4793795429E060D9006D6A56 /* CardView.swift */,
 				4793795629E061A9006D6A56 /* AllCardsView.swift */,
 				4793795829E063D5006D6A56 /* detailedCultureView.swift */,
+				4793796129E1AEB4006D6A56 /* PicksCardView.swift */,
 			);
 			path = AllCardsViews;
 			sourceTree = "<group>";
@@ -157,6 +163,14 @@
 				4793795B29E08467006D6A56 /* FavorsView.swift */,
 			);
 			path = FavorsView;
+			sourceTree = "<group>";
+		};
+		4793796329E2C314006D6A56 /* GPT */ = {
+			isa = PBXGroup;
+			children = (
+				4793796429E2C329006D6A56 /* GPTView.swift */,
+			);
+			path = GPT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4793795529E060D9006D6A56 /* CardView.swift in Sources */,
+				4793796229E1AEB4006D6A56 /* PicksCardView.swift in Sources */,
 				4793795229E02E86006D6A56 /* CultureInheritanceVM.swift in Sources */,
 				4793795E29E145D8006D6A56 /* MyCategoriesView.swift in Sources */,
 				4793794D29E01E94006D6A56 /* HomeNavigationView.swift in Sources */,
@@ -242,6 +257,7 @@
 				4793793229E0190E006D6A56 /* MainView.swift in Sources */,
 				4793793029E0190E006D6A56 /* InheritanceApp.swift in Sources */,
 				4793794629E01D7D006D6A56 /* OnBoarding.swift in Sources */,
+				4793796529E2C329006D6A56 /* GPTView.swift in Sources */,
 				4793795929E063D5006D6A56 /* detailedCultureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,18 +42,18 @@ struct CardView: View {
                 Spacer()
             }
             HStack {
-                Text(card.content.descrip)
+                Text(card.content.origin)
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 Spacer()
             }
-            HStack{
-                Text("\(card.content.existTime)")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            }
+//            HStack{
+//                Text("\(card.content.existTime)")
+//                    .font(.subheadline)
+//                    .foregroundColor(.gray)
+//                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+//            }
             //                HStack {
             //                    ForEach(0 ..< trendingMeal.stars) { item in
             //                        Image(systemName: "star.fill")

@@ -19,16 +19,17 @@ struct MyCategoriesView: View {
             VStack{
                 NavigationLink(destination: detailedCultureView(card), label:{
                     ZStack{
-                        Image(card.content.image)
+                        Image(card.content.Cateimage)
                             .resizable()
                     }
                 })
                 Text(card.content.title)
                     .font(.subheadline)
                     .bold()
+                    .foregroundColor(.black)
     //                .font(font(in: geometry.size))
             }
-            .frame(width: 80, height: 90, alignment: .center)
+            .frame(width: 75, height: 90, alignment: .center)
             .background(.brown).opacity(0.6)
             .cornerRadius(15)
             }
