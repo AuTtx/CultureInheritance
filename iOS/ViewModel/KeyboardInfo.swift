@@ -18,7 +18,7 @@ public class KeyboardInfo: ObservableObject {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardChanged), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardChanged), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
-
+  
     @objc func keyboardChanged(notification: Notification) {
         if notification.name == UIApplication.keyboardWillHideNotification {
             self.height = 0
@@ -26,5 +26,5 @@ public class KeyboardInfo: ObservableObject {
             self.height = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height ?? 0
         }
     }
-
+   
 }
