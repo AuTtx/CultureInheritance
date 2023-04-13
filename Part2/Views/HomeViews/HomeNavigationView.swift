@@ -9,9 +9,12 @@ import SwiftUI
 
 struct HomeNavigationView: View {
     @State private var selection = 1
+    @State var showAccount = false
+    
     init() {
         UITabBar.appearance().backgroundColor = .white
     }
+    
 //    init(selection: Int = 1, Inher: CultureInheritanceVM) {
 //        self.Inher = Inher
 //        UITabBar.appearance().backgroundColor = .white
@@ -27,20 +30,50 @@ struct HomeNavigationView: View {
                     
                 }.tag(1)
                 
-                FavorsView().tabItem {
+                EmojiMemoryGameView(game : EmojiMemoryGameView.game1).tabItem {
                     VStack {
                         Image(systemName: "heart.fill")
-                        Text("关注")
+                        Text("玩一玩")
                     }
                     
                 }.tag(2)
                 
-                Text("Profile").tabItem {
-                    VStack {
-                        Image(systemName: "person.fill")
-                        Text("我")
-                    }
-                }.tag(3)
+                
+                AccountView().tabItem {
+                    VStack{
+                        VStack {
+                            Image(systemName: "person.fill")
+                            Text("我")
+                        }
+                    }.tag(4)
+                }
+                
+                ARContentView().tabItem{
+                    VStack{
+                        VStack{
+                            Image(systemName: "viewfinder.circle.fill")
+                            Text("AR体验")
+                        }
+                    }.tag(3)
+                }
+                
+                
+                
+//                Button{
+//                    showAccount = true
+//                }label: {
+//                    Text("Profile").tabItem {
+//                        VStack {
+//                            Image(systemName: "person.fill")
+//                            Text("我")
+//                        }
+//                    }.tag(3)
+//                        .sheet(isPresented: $showAccount){
+//                            AccountView()
+//                        }
+//                }
+                
+                
             }
             .accentColor(.red)
         }

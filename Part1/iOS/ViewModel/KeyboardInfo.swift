@@ -1,9 +1,3 @@
-//
-//  KeyboardInfo.swift
-//  ChatGPT (iOS)
-//
-//  Created by peak on 2023/2/24.
-//
 
 import SwiftUI
 

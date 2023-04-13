@@ -1,9 +1,3 @@
-//
-//  DispathQueue.swift
-//  ChatGPT
-//
-//  Created by peak on 2023/2/24.
-//
 
 import Foundation
 

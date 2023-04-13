@@ -1,9 +1,3 @@
-//
-//  MainView.swift
-//  ChatGPT
-//
-//  Created by peak on 2023/2/20.
-//
 
 import SwiftUI
 

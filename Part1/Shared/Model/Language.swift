@@ -1,9 +1,3 @@
-//
-//  Language.swift
-//  ChatGPT
-//
-//  Created by 陈希 on 2023/2/18.
-//
 
 import Foundation
 

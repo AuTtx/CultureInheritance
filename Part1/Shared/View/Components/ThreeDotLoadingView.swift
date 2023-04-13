@@ -1,9 +1,4 @@
-//
-//  ThreeDotLoadingView.swift
-//  ChatGPT
-//
-//  Created by 陈希 on 2023/2/19.
-//
+
 
 import SwiftUI
 

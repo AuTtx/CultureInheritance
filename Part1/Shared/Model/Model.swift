@@ -1,9 +1,3 @@
-//
-//  Model.swift
-//  ChatGPT
-//
-//  Created by peak on 2023/2/23.
-//
 
 import Foundation
 

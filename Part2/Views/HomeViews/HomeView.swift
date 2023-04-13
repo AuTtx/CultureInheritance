@@ -12,13 +12,25 @@ struct HomeView: View {
     @State var hero = false
     @ObservedObject static var Inheritance = CultureInheritanceVM()
 //    @State public var Inheritance = CultureInheritanceVM()
+    @State var showSearch = false
     
     var body: some View {
         
         VStack{
             ScrollView(.vertical, showsIndicators: false){
                 VStack{
-                    SearchBar()
+//                    SearchBar()
+                    Button{
+                        showSearch = true
+                    }label: {
+                        SearchBar()
+                    }
+                    .sheet(isPresented: $showSearch){
+                        SearchView()
+                    }
+                    
+                    
+                    
                     VStack{
                         HStack {
                             Text("精选")
@@ -128,7 +140,8 @@ struct HomeView: View {
             
             
             NavigationLink(
-                destination: GPTView().environmentObject(ViewModel()),
+//                destination: GPTView().environmentObject(ViewModel()),
+                destination: MusicContentView(),
                 label: {
                     HStack {
                         Image(systemName: "location.fill")

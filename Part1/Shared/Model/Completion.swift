@@ -1,9 +1,4 @@
-//
-//  Completion.swift
-//  ChatGPT (iOS)
-//
-//  Created by peak on 2023/2/20.
-//
+
 
 import Foundation
 

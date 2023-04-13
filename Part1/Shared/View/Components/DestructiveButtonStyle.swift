@@ -1,9 +1,3 @@
-//
-//  TestButton.swift
-//  ChatGPT
-//
-//  Created by peak on 2023/2/22.
-//
 
 import SwiftUI
 
